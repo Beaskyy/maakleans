@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Overpass } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const overpass = Overpass({ subsets: ["latin"] });
+const overpass = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Maakleans Laundry Services",
