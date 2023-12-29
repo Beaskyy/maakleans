@@ -13,7 +13,7 @@ body {
 
 @layer base {
   button {
-    @apply flex items-center justify-center text-sm font-semibold  text-secondary px-6 py-3 bg-primary rounded-full hover:bg-tertiary hover:text-white hover:shadow-md min-w-max
+    @apply flex items-center justify-center text-sm font-semibold  text-white px-6 py-3 bg-primary rounded-full hover:bg-tertiary hover:text-white hover:shadow-md min-w-max
   }
   ul > li > a {
     @apply text-base font-medium hover:text-cool
