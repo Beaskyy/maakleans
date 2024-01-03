@@ -5,6 +5,7 @@ import { RiShirtLine, RiTShirtAirLine } from "react-icons/ri";
 import { GiSewingMachine } from "react-icons/gi";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsPinMapFill } from "react-icons/bs";
+import { FaCheck } from "react-icons/fa6";
 
 const Services = () => {
   return (
@@ -103,10 +104,25 @@ const Services = () => {
       <div className="w-full absolute top-72">
         <div className="grid grid-cols-1 lg:grid-cols-2 mx-20">
           <div>left</div>
-          <div>
-            <h2 className="text-4xl font-extrabold max-w-96">
+          <div className="max-w-96">
+            <h2 className="text-4xl font-extrabold mb-2">
               Laundry is Easier with Dependable Cleaners
             </h2>
+            <p className="flex justify-start items-center gap-3">
+              <FaCheck /> <span>Lorem, ipsum dolor.</span>
+            </p>
+            <p className="flex justify-start items-center gap-3">
+              <FaCheck /> <span>Lorem, ipsum dolor.</span>
+            </p>
+            <p className="flex justify-start items-center gap-3">
+              <FaCheck /> <span>Lorem, ipsum dolor.</span>
+            </p>
+            <p className="flex justify-start items-center gap-3">
+              <FaCheck /> <span>Lorem, ipsum dolor.</span>
+            </p>
+            <p className="flex justify-start items-center gap-3">
+              <FaCheck /> <span>Lorem, ipsum dolor.</span>
+            </p>
           </div>
         </div>
       </div>
