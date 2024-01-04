@@ -6,12 +6,13 @@ import { GiSewingMachine } from "react-icons/gi";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsPinMapFill } from "react-icons/bs";
 import { FaCheck } from "react-icons/fa6";
+import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="relative bg-white">
-      <div className="absolute w-3/4 m-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div className="flex flex-col justify-center items-center bg-white w-full rounded-lg shadow-2xl p-12">
+    <>
+      <div className="flex flex-col justify-center items-center bg-sky-100 p-12 pb-24">
+        <div className="flex flex-col justify-center items-center bg-white p-16 pt-10 rounded-xl shadow-2xl">
           <h2 className="text-3xl p-8 font-bold">Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-20">
             <div className="flex flex-col items-center justify-center gap-4">
@@ -101,10 +102,10 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="w-full absolute top-72">
-        <div className="grid grid-cols-1 lg:grid-cols-2 mx-20">
-          <div>left</div>
-          <div className="max-w-96">
+      <div className="py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 mx-20 gap-20">
+            <img src="/images/launder.jpg" alt="services" className="lg:w-[500px] lg:h-[500px] w-40 h-40 rounded-full object-cover" />
+          <div className="flex flex-col items-start justify-center max-w-96">
             <h2 className="text-4xl font-extrabold mb-2">
               Laundry is Easier with Dependable Cleaners
             </h2>
@@ -126,7 +127,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

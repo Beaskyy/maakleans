@@ -1,15 +1,38 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaBarsStaggered } from "react-icons/fa6";
 
 const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="">
-      <div className="hidden fixed lg:flex justify-between items-center p-4 w-full lg:px-20 gap-8 z-10 bg-sky-100">
+      <div
+        className={`hidden fixed lg:flex justify-between items-center p-4 w-full lg:px-20 gap-8 z-50 bg-sky-100 ${
+          isScrolled ? "shadow-xl" : ""
+        }`}
+      >
         <div>
           <Link href="/">
             <p className="text-2xl font-bold">Maakleans</p>
@@ -37,7 +60,11 @@ const Header = () => {
       </div>
 
       {/* mobile menu */}
-      <div className="fixed lg:hidden  w-full p-4">
+      <div
+        className={`fixed lg:hidden w-full p-4 bg-sky-100 ${
+          isScrolled ? "shadow-xl" : ""
+        }`}
+      >
         <div className="flex justify-between items-center">
           <div>
             <Link href="/">
