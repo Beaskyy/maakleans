@@ -13,9 +13,13 @@ body {
 
 @layer base {
   button {
-    @apply flex items-center justify-center text-sm font-semibold  text-white px-6 py-3 bg-primary rounded-xl hover:bg-tertiary hover:text-white hover:shadow-md min-w-max
+    @apply flex items-center justify-center text-sm font-semibold  text-white px-6 py-3 bg-primary rounded-xl hover:bg-tertiary hover:text-white hover:shadow-md min-w-max;
   }
   ul > li > a {
-    @apply text-base font-medium hover:text-cool
+    @apply text-base font-medium hover:text-cool;
   }
+}
+
+.bg-image {
+  background-image: url("https://img.freepik.com/free-photo/closeup-photo-fashionable-clothes-hangers-shop_627829-6026.jpg?w=740&t=st=1704487053~exp=1704487653~hmac=4ce79d22b4308b8894eb0d0d72a02852a15588d9aec2e7a39592abfe3c931d0e");
 }
