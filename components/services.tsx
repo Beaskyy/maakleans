@@ -110,19 +110,19 @@ const Services = () => {
               Laundry is Easier with Dependable Cleaners
             </h2>
             <p className="flex justify-start items-center gap-3">
-              <FaCheck className="text-primary" /> <span>Lorem, ipsum dolor.</span>
+              <FaCheck className="text-primary" /> <span>Free Pickup Delivery</span>
             </p>
             <p className="flex justify-start items-center gap-3">
-              <FaCheck className="text-primary" /> <span>Lorem, ipsum dolor.</span>
+              <FaCheck className="text-primary" /> <span>Mobile App</span>
             </p>
             <p className="flex justify-start items-center gap-3">
-              <FaCheck className="text-primary" /> <span>Lorem, ipsum dolor.</span>
+              <FaCheck className="text-primary" /> <span>VIP Express Services</span>
             </p>
             <p className="flex justify-start items-center gap-3">
-              <FaCheck className="text-primary" /> <span>Lorem, ipsum dolor.</span>
+              <FaCheck className="text-primary" /> <span>One Day Dry Cleaning</span>
             </p>
             <p className="flex justify-start items-center gap-3">
-              <FaCheck className="text-primary" /> <span>Lorem, ipsum dolor.</span>
+              <FaCheck className="text-primary" /> <span>24-Hour Kiosks</span>
             </p>
 
             <button className="mt-5">Make your Free Order</button>
