@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="bg-sky-100">
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-4 lg:p-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-4 lg:p-20 gap-10">
         <div className="pt-20">
           <h1 className="text-5xl lg:text-7xl font-extrabold mb-4">
             Lagos <br /> First Choice in Dry Cleaning
