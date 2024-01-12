@@ -15,6 +15,9 @@ body {
   button {
     @apply flex items-center justify-center text-sm font-semibold  text-white px-6 py-3 bg-primary rounded-xl hover:bg-tertiary hover:text-white hover:shadow-md min-w-max;
   }
+  p {
+    @apply text-slate-600 leading-7
+  }
   ul > li > a {
     @apply text-base font-medium hover:text-cool;
   }
