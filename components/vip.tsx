@@ -4,12 +4,12 @@ import React from "react";
 const Vip = () => {
   return (
     <div className="flex justify-center items-center pt-72 my-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 pb-20">
         <div>
           <Image src="/images/vip.jpg" alt="vip" width={350} height={430} className="rounded-lg" />
         </div>
-        <div className="max-w-md my-5">
-          <h1 className="text-4xl font-extrabold mb-5">
+        <div className="max-w-md p-4 lg:p-0">
+          <h1 className="text-4xl font-extrabold mt-10 mb-5">
             Get the VIP treatment
           </h1>
           <p className="font-normal">

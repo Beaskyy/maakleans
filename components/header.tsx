@@ -29,8 +29,8 @@ const Header = () => {
   return (
     <div className="">
       <div
-        className={`hidden fixed lg:flex justify-between items-center p-4 w-full lg:px-20 gap-8 z-50 bg-sky-100 ${
-          isScrolled ? "shadow-xl" : ""
+        className={`hidden fixed lg:flex justify-between items-center p-4 w-full lg:px-20 gap-8 z-50 ${
+          isScrolled ? "shadow-xl bg-white" : "bg-sky-100"
         }`}
       >
         <div>
